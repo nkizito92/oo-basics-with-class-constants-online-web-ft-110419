@@ -16,6 +16,7 @@ describe 'Shoe' do
 
     it 'only keeps track of unique brands' do
       Shoe::BRANDS.clear
+      #this is clearing the duplicate in the array below
       brands = ["Uggs", "Rainbow", "Nike", "Nike"]
       brands.each do |brand|
         Shoe.new(brand)
